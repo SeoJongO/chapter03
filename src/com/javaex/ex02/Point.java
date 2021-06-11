@@ -38,4 +38,16 @@ public class Point {
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
 
+	@Override
+	public boolean equals(Object obj) {
+		
+		Point p = ((Point)obj);
+		
+		if (this.x == p.x && this.y == p.y) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
 }
